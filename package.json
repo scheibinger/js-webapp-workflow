@@ -9,6 +9,8 @@
     "grunt-rigger": "*",
     "grunt-contrib-jasmine": "~0.3.0rc5",
     "grunt-contrib-connect": "latest",
-    "grunt-jslint": "latest"
+    "grunt-jslint": "latest",
+    "bbb": "latest",
+    "grunt-template-jasmine-requirejs": "~0.1.0"
   }
 }

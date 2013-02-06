@@ -66,8 +66,20 @@ module.exports = function (grunt) {
         },
 
         'jasmine': {
-            src: 'src/**/*.js',
-            specs: 'specs/**/*Spec.js'
+            src: 'spec/main.js',
+            options:{
+                specs: 'spec/**/*Spec.js',
+                helpers:['app/scripts/vendor/require.js']
+            }
+
+        },
+        'jasmine2': {
+            src: 'app/scripts/**/*.js',
+            options:{
+                specs: 'spec/**/*spec.js',
+                helpers:['app/scripts/vendor/require.js','app/scripts/main.js']
+            }
+
         },
         'jasmine-server': {
             browser: false
